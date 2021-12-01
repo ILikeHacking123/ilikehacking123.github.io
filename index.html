@@ -22,42 +22,9 @@
     <link rel="stylesheet" href="textcolor.css">
   </head>
   <body style="background-color:#252565">
+    <script src="./script/index.js"></script>
     <center> <h4> TUANMINH OFFICAL PAGE </h4> </center>
     <center> Ah-ha! You are found my secret! </center>
-    <script>
-    function setCookie(cname,cvalue,exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000));
-        var expires = "expires=" + d.toGMTString();
-        document.cookie = cname+"="+cvalue+"; "+expires;
-    }
-
-    function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0; i<ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1);
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return null;
-    }
-
-    function checkCookie() {
-        var user=getCookie("username");
-         if (user != null) {
-            document.getElementById("person").innerHTML =
-            "Hello " + user + "!";
-        } else {
-           user = prompt("What your name?","");
-           if (user != "" && user != null) {
-               setCookie("username", user, 90);
-           }
-        }
-    }
-    </script>
     <center> Let's try my Operating system! I still working on it </center>
     <center><iframe src="https://replit.com/@TuanminhDev/Tuanminh-OS" style="height:1020px;width:950px" title="My OS"></iframe></center>
     <center><a href="https://replit.com/@TuanminhDev/Tuanminh-OS"> Frame source </a></center>
